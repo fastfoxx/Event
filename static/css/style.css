@@ -1,0 +1,75 @@
+html[background="Excavation"]{
+	background: url('../img/excavation.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html[background="Croxar"]{
+	background: url('../img/croxar.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html[background="Aomak"]{
+	background: url('../img/aomak.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+	background-color: rgba(0,0,0,0.55);
+}
+
+section{
+	height:100vh;
+	width:100vw;
+}
+
+div#bossSpawn{
+	padding-top:15vh;
+}
+
+div#bossSpawn h1:nth-of-type(1){
+	font-size: 15rem;
+}
+
+div#bossSpawn h1{
+	font-size: 10rem;
+	text-align: center;
+}
+
+div#bossSpawn h2{
+	text-align: center;
+}
+
+div#bossSpawn h1 span{
+	font-size:3rem;
+}
+
+div#buttons{
+	padding:2rem;
+}
+
+div#buttons button{
+	color:white;
+	padding:0rem 8rem;
+	font-size: 1.8rem;
+	margin-right:2rem;
+	height:8rem;
+}
+
+div#buttons button[active="1"]{
+	background:#ecf0f1;
+	color:black;
+}
+
+div#buttons button[active="0"]{
+	background:transparent;
+}
+
