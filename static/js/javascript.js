@@ -141,15 +141,15 @@ function whichboss(nummer){
 	var checkint = parseInt(nummer/3);
 	var rest = checkfloat - checkint;
 	if(rest < 0.1){
-		return 'Croxar';
-	};
-	if(rest > 0.1 && rest < 0.4){
-		return 'Aomak';
-	};
-	if(rest > 0.5 && rest < 0.7){
 		return 'Excavation';
 	};
-	//Aomak > Croxar > Excavationn
+	if(rest > 0.1 && rest < 0.4){
+		return 'Croxar';
+	};
+	if(rest > 0.5 && rest < 0.7){
+		return 'Aomak';
+	};
+	//Aomak > Croxar > Excavation
 };
 
 function unlimited_spawn_works(){
