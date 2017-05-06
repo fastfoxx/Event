@@ -14,6 +14,76 @@ function checkTime(i) {
 };
 
 
+function timeadder(tijd,offset){
+	var stringtijd = String(tijd)
+	var hulptijd = 0
+	var hulpuur = 0
+	if (stringtijd.length === 1 ) {
+		hulptijd = tijd + offset;
+	};
+	if (stringtijd.length === 2 ) {
+		hulptijd  = tijd + offset
+		if( hulptijd > 60){
+			hulptijd = hulptijd + 40;
+		};
+	};
+
+
+
+	if (stringtijd.length === 3 ) {
+		hulptijd = tijd + offset;
+		if( parseInt(String(hulptijd).substring(1,3))> 60){
+			hulptijd = hulptijd + 40;
+		};
+	};
+	if (stringtijd.length === 4 ) {
+		hulptijd = tijd + offset;
+		if( parseInt(String(hulptijd).substring(2)) > 60){
+			hulptijd = hulptijd + 40
+			if (hulptijd > 2400){
+				hulptijd = hulptijd - 2400;
+			};
+		};
+	};
+
+	return hulptijd
+};
+
+
+function offsetarray(array_array, offset){
+	var small_arraysize = 0
+	var arraysize = array_array.length
+	var new_time = 0
+	var new_array = []
+	var extracount = 0
+	var extra = 0
+	for(var i = 0; i<arraysize; i++){
+		var small_array = []
+		if (extracount > 0){
+			small_array.push(extra)
+			extracount = 0
+			}; 
+		small_arraysize = array_array[i].length
+		for (var j = 0; j<small_arraysize; j++){
+		 	new_time = timeadder(array_array[i][j], offset)
+		 	if (new_time < 3.1 ){
+		 		extra = new_time
+		 		extracount = 1
+		 	} else {
+		 		small_array.push(new_time);
+		 	};
+		 };
+		 new_array.push(small_array);
+		};
+
+	return new_array
+	};
+
+timeA = offsetarray(timeA, 5)
+timeB = offsetarray(timeB, 5)
+
+
+
 function startTime() {
   var today = new Date();
   var h = today.getHours();
