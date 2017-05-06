@@ -74,13 +74,13 @@ function whichboss(nummer){
 	var checkint = parseInt(nummer/3);
 	var rest = checkfloat - checkint;
 	if(rest < 0.1){
-		return 'Aomak';
+		return 'Croxar';
 	};
 	if(rest > 0.1 && rest < 0.4){
-		return 'Excavation';
+		return 'Aomak';
 	};
 	if(rest > 0.5 && rest < 0.7){
-		return 'Croxar';
+		return 'Excavation';
 	};
 	//Aomak > Croxar > Excavation
 };
