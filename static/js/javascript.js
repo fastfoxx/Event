@@ -189,7 +189,7 @@ function unlimited_spawn_works(){
 		chronos = timelist[numdate+1][0];
 		truecount = truecount + 1;
 	};
-	if (Time > chronos && truecount + 1 < daytimeamount){
+	if (Time > chronos && truecount  < daytimeamount){
 
 		chronos = timelist[numdate][truecount]
 		truecount = truecount + 1
