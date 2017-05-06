@@ -149,7 +149,7 @@ function whichboss(nummer){
 	if(rest > 0.5 && rest < 0.7){
 		return 'Excavation';
 	};
-	//Aomak > Croxar > Excavation
+	//Aomak > Croxar > Excavationn
 };
 
 function unlimited_spawn_works(){
