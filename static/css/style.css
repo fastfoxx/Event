@@ -64,6 +64,15 @@ div#buttons button{
 	height:8rem;
 }
 
+div#buttons button:nth-of-type(2){
+	margin-right:8rem;
+}
+
+div#buttons button:nth-of-type(3){
+	padding: 0rem 4rem;
+	text-transform:none
+}
+
 div#buttons button[active="1"]{
 	background:#ecf0f1;
 	color:black;
