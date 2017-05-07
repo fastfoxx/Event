@@ -140,17 +140,19 @@ function whichboss(nummer){
 	var checkfloat = (nummer * 1.00) / 3.00;
 	var checkint = parseInt(nummer/3);
 	var rest = checkfloat - checkint;
+	var bossOrder = ['Excavation','Croxar','Aomak'];
+
 	if(rest < 0.1){
-		if(active == "GMT"){return 'Croxar'};
-		return 'Excavation';
+		if(active == "GMT"){return bossOrder[1]};
+		return bossOrder[0];
 	};
 	if(rest > 0.1 && rest < 0.4){
-		if(active == "GMT"){return 'Aomak'};
-		return 'Croxar';
+		if(active == "GMT"){return bossOrder[2]};
+		return bossOrder[1];
 	};
 	if(rest > 0.5 && rest < 0.7){
-		if(active == "GMT"){return 'Excavation'};
-		return 'Aomak';
+		if(active == "GMT"){return bossOrder[0]};
+		return bossOrder[2];
 	};
 	//Aomak > Croxar > Excavation
 };
