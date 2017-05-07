@@ -254,5 +254,6 @@ $( "div#buttons button:nth-of-type(2)" ).click(function() {
 });
 
 $( "div#buttons button:nth-of-type(3)" ).click(function() {
+	alert('hi')
   window.location.reload(true)
 });
