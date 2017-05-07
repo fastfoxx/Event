@@ -1,5 +1,5 @@
 var timediff = 5;
-//var bossOrder = ['Aomak','Excavation','Croxar'];
+var bossOrder = ['Excavation','Croxar','Aomak'];
 
 function checkTime(i) {
   if (i < 10) {
@@ -143,7 +143,6 @@ function whichboss(nummer){
 	var checkfloat = (nummer * 1.00) / 3.00;
 	var checkint = parseInt(nummer/3);
 	var rest = checkfloat - checkint;
-	var bossOrder = ['Aomak','Excavation','Croxar'];
 
 	if(rest < 0.1){
 		if(active == "GMT"){return bossOrder[1]};
