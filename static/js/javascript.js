@@ -252,3 +252,7 @@ $( "div#buttons button:nth-of-type(2)" ).click(function() {
   	timelist = timeA;
   }
 });
+
+$( "div#buttons button:nth-of-type(3)" ).click(function() {
+  window.location.reload(true)
+});
