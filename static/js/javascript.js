@@ -145,7 +145,7 @@ function whichboss(nummer){
 	var rest = checkfloat - checkint;
 
 	if(rest < 0.1){
-		if(active == "GMT"){return bossOrder[0]};
+		if(active == "GMT"){return bossOrder[2]};
 		return bossOrder[0];
 	};
 	if(rest > 0.1 && rest < 0.4){
@@ -153,7 +153,7 @@ function whichboss(nummer){
 		return bossOrder[1];
 	};
 	if(rest > 0.5 && rest < 0.7){
-		if(active == "GMT"){return bossOrder[2]};
+		if(active == "GMT"){return bossOrder[0]};
 		return bossOrder[2];
 	};
 	//Aomak > Croxar > Excavation
@@ -247,7 +247,7 @@ $( "div#buttons button:nth-of-type(2)" ).click(function() {
 });
 
 $( "div#buttons button:nth-of-type(3)" ).click(function() {
-  window.location.reload(true)
+  window.location.reload(true);
 });
 
 routie('uk', function() {
