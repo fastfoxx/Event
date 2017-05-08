@@ -239,23 +239,31 @@ function unlimited_spawn_works(){
 unlimited_spawn_works();
 
 $( "div#buttons button:nth-of-type(1)" ).click(function() {
-  if (active == "CEST") {
-  	active = "GMT";
-  	$("div#buttons button:nth-of-type(1)").attr("active","1");
-  	$("div#buttons button:nth-of-type(2)").attr("active","0");
-  	timelist = timeB;
-  }
+  window.location.replace("#uk");
 });
 
 $( "div#buttons button:nth-of-type(2)" ).click(function() {
-  if (active == "GMT") {
-  	active = "CEST";
-  	$("div#buttons button:nth-of-type(2)").attr("active","1");
-  	$("div#buttons button:nth-of-type(1)").attr("active","0");
-  	timelist = timeA;
-  }
+   window.location.replace("#nl");
 });
 
 $( "div#buttons button:nth-of-type(3)" ).click(function() {
   window.location.reload(true)
+});
+
+routie('uk', function() {
+    if (active == "CEST") {
+  		active = "GMT";
+  		$("div#buttons button:nth-of-type(1)").attr("active","1");
+  		$("div#buttons button:nth-of-type(2)").attr("active","0");
+  		timelist = timeB;
+  }
+});
+
+routie('nl', function() {
+    if (active == "GMT") {
+  		active = "CEST";
+  		$("div#buttons button:nth-of-type(2)").attr("active","1");
+  		$("div#buttons button:nth-of-type(1)").attr("active","0");
+  		timelist = timeA;
+  }
 });
