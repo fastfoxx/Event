@@ -1,5 +1,5 @@
 var timediff = 5;
-var bossOrder = ['Aomak','Croxar','Excavation'];
+var bossOrder = ['Aomak','Excavation','Croxar'];
 
 function checkTime(i) {
   if (i < 10) {
