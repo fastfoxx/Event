@@ -1,5 +1,5 @@
 var timediff = 5;
-var bossOrder = ['Aomak','Excavation','Croxar'];
+var bossOrder = ['Aomak','Croxar','Excavation'];
 
 function checkTime(i) {
   if (i < 10) {
@@ -178,14 +178,14 @@ function whichboss(nummer){
 	};
 	if(rest > 0.1 && rest < 0.4){
 		if(active == "GMT"){return bossOrder[2]};
-		return bossOrder[2];
+		return bossOrder[1];
 	};
 	if(rest > 0.5 && rest < 0.7){
 		if(active == "GMT"){return bossOrder[0]};
-		return bossOrder[1];
+		return bossOrder[2];
 	};
 	//Aomak > Croxar > Excavation
-	//bossOrder = ['Excavation','Croxar','Aomak'];
+	//bossOrder = ['Aomak','Croxar','Excavation'];
 };
 
 function unlimited_spawn_works(){
