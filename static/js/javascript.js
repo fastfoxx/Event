@@ -174,18 +174,18 @@ function whichboss(nummer){
 
 	if(rest < 0.1){
 		if(active == "GMT"){return bossOrder[2]};
-		return bossOrder[1];
+		return bossOrder[2];
 	};
 	if(rest > 0.1 && rest < 0.4){
 		if(active == "GMT"){return bossOrder[0]};
-		return bossOrder[2];
+		return bossOrder[0];
 	};
 	if(rest > 0.5 && rest < 0.7){
 		if(active == "GMT"){return bossOrder[1]};
-		return bossOrder[0];
+		return bossOrder[1];
 	};
-	//Aomak > Croxar > Excavation
-	//bossOrder = ['Aomak','Croxar','Excavation'];
+	//Aomak > Excavation > Croxar
+	//bossOrder = ['Aomak','Excavation','Croxar'];
 };
 
 function unlimited_spawn_works(){
