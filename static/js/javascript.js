@@ -173,15 +173,15 @@ function whichboss(nummer){
 	var rest = checkfloat - checkint;
 
 	if(rest < 0.1){
-		if(active == "GMT"){return bossOrder[1]};
+		if(active == "GMT"){return bossOrder[2]};
 		return bossOrder[1];
 	};
 	if(rest > 0.1 && rest < 0.4){
-		if(active == "GMT"){return bossOrder[2]};
+		if(active == "GMT"){return bossOrder[0]};
 		return bossOrder[2];
 	};
 	if(rest > 0.5 && rest < 0.7){
-		if(active == "GMT"){return bossOrder[0]};
+		if(active == "GMT"){return bossOrder[1]};
 		return bossOrder[0];
 	};
 	//Aomak > Croxar > Excavation
