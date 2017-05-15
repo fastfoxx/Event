@@ -1,4 +1,4 @@
-var timediff = 27;
+var timediff = 28;
 var bossOrder = ['Aomak','Excavation','Croxar'];
 
 function checkTime(i) {
