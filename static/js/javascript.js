@@ -229,6 +229,9 @@ function unlimited_spawn_works(){
 
 		chronos = timelist[numdate][truecount]
 		truecount = truecount + 1
+		if(Time < 100){
+			chronos = timelist[numdate][truecount]
+		}
 	}
 
 
