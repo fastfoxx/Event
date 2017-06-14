@@ -249,10 +249,10 @@ function unlimited_spawn_works(){
 	if (stringtime.length === 4 ) {
 		stringtime = stringtime.substring(0,2) + ':' + stringtime.substring(2);
 	};
-	document.getElementById('oogabooga').innerHTML = Hour + ":" + Minute + ":" + Second
+	//document.getElementById('oogabooga').innerHTML = Hour + ":" + Minute + ":" + Second
 	console.log('The next boss ' + boss + ' will spawn at ' + stringtime) 
- 	$("section #bossSpawn h1:nth-of-type(1)").html( stringtime);
-    $("section #bossSpawn h1:nth-of-type(2)").html( boss );
+ 	//$("section #bossSpawn h1:nth-of-type(1)").html( stringtime);
+    //$("section #bossSpawn h1:nth-of-type(2)").html( boss );
 
     
     if (bgimg != boss ) {
